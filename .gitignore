@@ -1,0 +1,45 @@
+# Compiled C and asm files
+*.o
+*.a
+*.obj
+*.out
+
+# Compiled Python files
+*.pyc
+
+# Folder view configuration files
+.DS_Store
+desktop.ini
+
+# Thumbnail cache files
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Ignore any log file
+*.log
+
+# Personal
+.env
+tasks.txt
+
+package-lock.json
+composer.lock
+
+# Projects related
+node_modules/
+vendor/
+public/
+nbproject/
+.idea/
+.vagrant/
+.vscode/
+.buildpath/
+.project/
+.settings*
+storage/app/public/
+.phpstorm.meta.php
+_ide_helper.php
+/*.pem
