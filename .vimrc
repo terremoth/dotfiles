@@ -11,10 +11,10 @@ set softtabstop=4
 set smarttab
 set mouse=a
 filetype on
-filetype off
+filetype plugin indent on
+filetype plugin on
 set cursorline
 set ruler
-filetype plugin indent on
 set spelllang=en_us
 set history=200
 set undolevels=100
@@ -50,3 +50,10 @@ let g:netrw_browse_split = 4
 let g:netrw_winsize = 25
 set splitbelow
 set splitright
+
+autocmd FileType c      map <buffer> <F5> :w<CR>:!make %< && ./%< <CR>
+autocmd FileType php    map <buffer> <F5> :w<CR>:!php % <CR>
+autocmd FileType js     map <buffer> <F5> :w<CR>:!node % <CR>
+autocmd FileType python map <buffer> <F5> :w<CR>:!python %<CR>
+autocmd FileType sh     map <buffer> <F5> :w<CR>:!sh %<CR>
+
