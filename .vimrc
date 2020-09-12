@@ -17,7 +17,7 @@ set cursorline
 set ruler
 set spelllang=en_us
 set history=200
-set undolevels=100
+set undolevels=200
 set autoread
 set esckeys
 set hlsearch
@@ -41,19 +41,44 @@ set wildchar=<TAB>
 set wildmode=list:longest
 set wildignore+=*.DS_STORE,*.db,node_modules/**,*.jpg,*.png,*.gif,*.ico
 set noerrorbells
-set visualbell
+set novisualbell
+set belloff=all
 set infercase
+colorscheme slate
+
 noremap <C-S-Up> YP
 noremap <C-S-Down> YP
+
 let g:netrw_banner = 0
-let g:netrw_browse_split = 4
-let g:netrw_winsize = 25
+let g:netrw_browse_split = 3
+let g:netrw_winsize = 20
+let g:netrw_liststyle = 3
+let g:netrw_altv = 1
+
 set splitbelow
 set splitright
+
+map <C-E> :Vexplore<CR>
+
+let g:netrw_list_hide='.*\.swp$'
+" open files in left window by default
+ let g:netrw_chgwin=1
+" remap shift-enter to fire up the sidebar
+ nnoremap <silent> <S-CR> :rightbelow 20vs<CR>:e .<CR>
+" the same remap as above - may be necessary in some distros
+" nnoremap <silent> <C-M> :rightbelow 20vs<CR>:e .<CR>
+" remap control-enter to open files in new tab
+nmap <silent> <C-CR> t :rightbelow 20vs<CR>:e .<CR>:wincmd h<CR>
+" the same remap as above - may be necessary in some distros
+nmap <silent> <NL> t :rightbelow 20vs<CR>:e .<CR>:wincmd h<CR>
+
+autocmd Filetype netrw nmap <buffer> <F6> ma:argdo tabnew<CR>
 
 autocmd FileType c      map <buffer> <F5> :w<CR>:!make %< && ./%< <CR>
 autocmd FileType php    map <buffer> <F5> :w<CR>:!php % <CR>
 autocmd FileType js     map <buffer> <F5> :w<CR>:!node % <CR>
 autocmd FileType python map <buffer> <F5> :w<CR>:!python %<CR>
 autocmd FileType sh     map <buffer> <F5> :w<CR>:!sh %<CR>
+autocmd FileType java   map <buffer> <F5> :w<CR>:!javac % && java %<<CR>
 
+autocmd FileType php :colorscheme elflord
