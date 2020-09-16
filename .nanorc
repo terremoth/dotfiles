@@ -8,3 +8,4 @@ set tabstospaces
 set smooth
 set nowrap
 set historylog
+set locking
