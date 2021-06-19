@@ -297,42 +297,42 @@
       <action name="ToggleFullscreen"/>
     </keybind>
     <!-- LUCAS CONFIG -->
-    <keybind key="C-W-Up">       # FullScreen
+    <keybind key="C-W-Up">       <!-- FullScreen -->
       <action name="Maximize"/>
     </keybind>
-    <keybind key="C-W-Down">     # MiddleScreen
+    <keybind key="C-W-Down">      <!-- MiddleScreen -->
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo"><x>center</x><y>center</y><width>50%</width><height>50%</height></action>
     </keybind>
-    <keybind key="C-W-Left">     # HalfLeftScreen
+    <keybind key="C-W-Left">      <!-- HalfLeftScreen -->
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo"><x>0</x><y>0</y><height>100%</height><width>50%</width></action>
     </keybind>
-    <keybind key="C-W-Right">    # HalfRightScreen
+    <keybind key="C-W-Right">     <!-- HalfRightScreen -->
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo"><x>-0</x><y>0</y><height>100%</height><width>50%</width></action>
     </keybind>
-    <keybind key="C-W-1">        # UpperQuarterLeft
+    <keybind key="C-W-1">         <!-- UpperQuarterLeft -->
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo"><x>0</x><y>0</y><height>50%</height><width>50%</width></action>
     </keybind>
-    <keybind key="C-W-2">        # LowerQuarterLeft
+    <keybind key="C-W-2">         <!-- LowerQuarterLeft -->
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo"><x>0</x><y>-0</y><height>50%</height><width>50%</width></action>
     </keybind>
-    <keybind key="C-W-3">        # LowerQuarterRight
+    <keybind key="C-W-3">         <!-- LowerQuarterRight -->
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo"><x>-0</x><y>-0</y><height>50%</height><width>50%</width></action>
     </keybind>
-    <keybind key="C-W-4">        # UpperQuarterRight
+    <keybind key="C-W-4">         <!-- UpperQuarterRight -->
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo"><x>-0</x><y>0</y><height>50%</height><width>50%</width></action>
     </keybind>
-    <keybind key="C-W-d">        # HalfTopScreen
+    <keybind key="C-W-d">         <!-- HalfTopScreen -->
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo"><x>-0</x><y>0</y><height>50%</height><width>100%</width></action>
     </keybind>
-    <keybind key="C-W-s">        # HalfBottomScreen
+    <keybind key="C-W-s">         <!-- HalfBottomScreen -->
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo"><x>-0</x><y>50%</y><height>50%</height><width>100%</width></action>
     </keybind>
