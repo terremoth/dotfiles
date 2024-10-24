@@ -9,3 +9,7 @@ ghc() {
 ghct() {
     ghc "terremoth/$1"
 }
+
+copyc() {
+    cat $1 | xclip -sel clipboard
+}
