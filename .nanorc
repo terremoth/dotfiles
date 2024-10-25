@@ -9,3 +9,10 @@ set smooth
 set nowrap
 set historylog
 set locking
+set undo
+set cutfromcursor
+set colorer
+set autosyntax
+set jumpyscrolling
+set bracketmatch
+set hilitesearch
