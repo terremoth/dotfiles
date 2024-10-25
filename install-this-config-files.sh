@@ -17,5 +17,7 @@ if command -v bash &> /dev/null && command -v wget &> /dev/null; then
     bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
 fi
 
+echo "source .bash_aliases" >> ~/.bashrc 
+
 echo 'All config files installed';
 
