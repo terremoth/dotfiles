@@ -19,5 +19,10 @@ fi
 
 echo "source .bash_aliases" >> ~/.bashrc 
 
+source ~/.bashrc
+
+otheme lambda
+reset
+
 echo 'All config files installed';
 
