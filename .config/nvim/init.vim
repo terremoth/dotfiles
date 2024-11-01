@@ -95,7 +95,8 @@ let commands = {
   \ 'c': 'make %< && ./%<',
   \ 'php': 'php %',
   \ 'js': 'node %',
-  \ 'python': 'python %',
+  \ 'py': 'python %',
+  \ 'pyw': 'python %',
   \ 'sh': 'sh %',
   \ 'awk': 'awk -f %',
   \ 'Makefile': 'make %',
@@ -107,5 +108,3 @@ for [lang, cmd] in items(commands)
   exec 'autocmd FileType ' . lang . ' map <buffer> <F5> :w<CR>:!clear && ' . cmd . '<CR>'
 endfor
 
-
-autocmd FileType php :colorscheme elflord
